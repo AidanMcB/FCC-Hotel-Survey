@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="styles.css">
+    <h1 id="title">Code Camp Hotel Survey</h1>
+    <p id="description">Tell Us About Your Stay at Code Camp Hotel!</p>
+  </head>
+  <body>
+    <form id="survey-form">
+      <label id="name-label">Name:</label> <input type="text" required id="name" placeholder="Enter Your Name"<br>
+      <label id="email-label">Email:</label> <input type="email" required id="email" placeholder="Email Address"<br>
+      <label id="number-label">Age:</label> <input type="number" required id="number" min="18" max="120" placeholder="Age"<br>
+      <br>
+      <p id="p2">What was the reason for your stay?</p>
+   <select id="dropdown">
+        <option value="buisiness">Buisiness</option>
+     <option value="vacation">Vacation</otpion>
+      <option value="Family">Visiting Family</option>
+      <option value="other">Other</option>
+      </select>
+        <br>
+    <p id="p3">What is the likelihood you will stay at a Code Camp Hotel again?</p>
+    <br>
+    <label for="Of Course!">
+      <input type="radio" id="Of Course!" name="stayAgain" value="Of Course!">Of Course!</label>
+    <label for="Probably">
+      <input type="radio" id="Probably" name="stayAgain" value="Probably">Probably</label>
+    <label for="Unlikely">
+      <input type="radio" id="Unlikely" name="stayAgain" value="Unlikely">Unlikely</label>
+    <br>
+    <p id="p4">Please check off any areas we can improve at the Code Camp Hotel:</p>
+      <br>
+    <label for="Room Service"><input value="Room Service" type="checkbox" name="improve">Room Service</label>
+    <label for="Staff Friendliness"><input value="Staff Friendliness" type="checkbox" name="improve">Staff Friendliness</label>
+    <label for="Cleanliness"><input value="Cleanliness" type="checkbox" name="improve">Cleanliness</label>
+    <label for="Breakfast Buffet"><input value="Breakfast Buffet" type="checkbox" name="improve">Breakfast Buffet</label>
+    <label for="House Keeping"><input value="House Keeping" type="checkbox" name="improve">House Keeping</label>
+    <label for="Price"><input value="Price" type="checkbox" name="improve">Price</label>
+    <br>
+    <p id="p5">Please feel free to let us know any additional comments
+      or concerns you may have about the Code Camp Hotel!</p>
+    <br>
+    <textarea rows="6" cols="45">
+    </textarea>
+    <br>
+    <button id="submit">Submit Your Survey</button>
+    </form>
+      
+    
+  </body>
+    <script 
+  src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
